@@ -3,12 +3,11 @@ This is a demo intruducing UITableView`s basically using,
 * Insert/delete/move cell from table; 
 * Search for text in UITableView. 
 
-
-#### Editing
+### TableView Editing
 
 ![Alt Text](https://github.com/michaelMaoMao/TableViewDemo/blob/master/UITableViewEditing.png)
 
-#### Searching
+### TableView Searching
 
 ![Alt Text](https://github.com/michaelMaoMao/TableViewDemo/blob/master/UITableViewSearching.png)
 
