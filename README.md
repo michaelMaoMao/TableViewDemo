@@ -4,11 +4,11 @@ This is a demo intruducing UITableView`s basically using,
 * Search for text in UITableView. 
 
 
-* Editing
+#### Editing
 
 ![Alt Text](https://github.com/michaelMaoMao/TableViewDemo/blob/master/UITableViewEditing.png)
 
-* Searching
+#### Searching
 
 ![Alt Text](https://github.com/michaelMaoMao/TableViewDemo/blob/master/UITableViewSearching.png)
 
