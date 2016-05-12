@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="n7W-Gu-ejq">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--TableViewDemo-->
+        <scene sceneID="9NU-jN-8FG">
+            <objects>
+                <tableViewController id="MrU-gv-1g7" customClass="ViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="vSx-zs-pa9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="PWx-sk-rfC">
+                            <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="MrU-gv-1g7" id="Aqn-di-0lF"/>
+                            </connections>
+                        </searchBar>
+                        <connections>
+                            <outlet property="dataSource" destination="MrU-gv-1g7" id="QGD-dK-H9s"/>
+                            <outlet property="delegate" destination="MrU-gv-1g7" id="8Z8-aG-4dV"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="TableViewDemo" id="3x9-vg-MsN"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="bs4-Fp-IX8" id="GHu-WZ-HxS"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V1L-cS-Ftl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="bs4-Fp-IX8">
+                    <connections>
+                        <outlet property="delegate" destination="MrU-gv-1g7" id="p1l-hO-gSp"/>
+                        <outlet property="searchBar" destination="PWx-sk-rfC" id="Nev-dl-lVy"/>
+                        <outlet property="searchContentsController" destination="MrU-gv-1g7" id="Vm0-w4-iEt"/>
+                        <outlet property="searchResultsDataSource" destination="MrU-gv-1g7" id="CbE-MQ-PL6"/>
+                        <outlet property="searchResultsDelegate" destination="MrU-gv-1g7" id="mKz-4a-S7h"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="-452" y="-364"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oYp-ua-fTD">
+            <objects>
+                <navigationController id="n7W-Gu-ejq" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5gK-U3-FGN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="MrU-gv-1g7" kind="relationship" relationship="rootViewController" id="sax-zy-SjW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bgB-nv-O6k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-868" y="-364"/>
+        </scene>
+    </scenes>
+</document>
